@@ -19,6 +19,7 @@ async function sendMessage(message) {
   addMessage('You', message);
 
   try {
+    console.log("Sending message to backend:", message);  // Debug log
     const response = await fetch('https://mentalyze-backend.onrender.com/api/chat', {
       method: 'POST',
       headers: {
@@ -30,6 +31,7 @@ async function sendMessage(message) {
     if (!response.ok) throw new Error('Failed to fetch response');
     
     const data = await response.json();
+    console.log("Received response from backend:", data);  // Debug log
     if (data.status === 'question') {
       // Display the next question
       addMessage('Mentalyze', data.reply);
