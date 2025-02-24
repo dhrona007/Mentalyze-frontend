@@ -10,18 +10,20 @@
 }
 
 body {
-font-family: Arial, sans-serif;
-background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, var(--background-opacity))) url("https://static.vecteezy.com/system /resources/previews/025/446/274/large_2x /mental-health-happiness-creative-abstract -concept-colorful-illustration-of-male -head-paint-splatter-style-mindfulness -positive-thinking-self-care-idea-banner -white-background-generative-ai-photo.jpg" ) no-repeat center center;
-background-size: cover;
-background-attachment: fixed;
-color: var(--text-color);
- margin: 0;
-padding: 10px;
-line-height: 1.6;
- opacity: 0.82;
- scrollbar-width: thin;
-scrollbar-color: #fcfcfc transparent;
- background-color: transparent;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, var(--background-opacity))),
+    url("https://static.vecteezy.com/system/resources/previews/025/446/274/large_2x/mental-health-happiness-creative-abstract-concept-colorful-illustration-of-male-head-paint-splatter-style-mindfulness-positive-thinking-self-care-idea-banner-white-background-generative-ai-photo.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: var(--text-color);
+  margin: 0;
+  padding: 10px;
+  line-height: 1.6;
+  opacity : 0.82;
+  scrollbar-width: thin;
+  scrollbar-color: #fcfcfc transparent;
+  background-color: transparent;
+  
 }
 
 .navbar {
