@@ -21,7 +21,7 @@ body {
   scrollbar-color: #fcfcfc transparent;
   background-color: transparent;
   position: relative; /* Ensure content is positioned correctly */
-  overflow: hidden; /* Prevent scrolling of the background */
+  overflow: auto; /* Allow scrolling of the content */
 }
 
 /* Pseudo-element for fixed background */
@@ -135,68 +135,4 @@ body::before {
 }
 
 #chat-input {
-  width: calc(100% - 90px);
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-right: 10px;
-}
-
-#send-btn,
-#emergency-btn {
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  min-width: 100px;
-  max-width: 170px;
-  max-height: 60px;
-  margin: 10px;
-  margin-top: 20px;
-}
-
-#send-btn {
-  background-color: var(--success-color);
-  color: var(--white);
-}
-
-#emergency-btn {
-  background-color: var(--danger-color);
-  color: var(--white);
-}
-
-#send-btn:hover {
-  background-color: #218838;
-}
-
-#emergency-btn:hover {
-  background-color: #c82333;
-}
-
-.mood-buttons button {
-  background-color: var(--primary-color);
-  color: var(--white);
-  border: none;
-  padding: 10px 20px;
-  margin: 5px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.mood-buttons button:hover {
-  background-color: #0056b3;
-}
-
-section {
-  margin: 40px auto;
-  padding: 30px;
-  max-width: 900px;
-  background: var(--white);
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  color: var(--text-color);
-}
-
-.aboutus {
-  margin-bottom: 100px;
-  max-height: 350px;
-}
+  width: calc(100
