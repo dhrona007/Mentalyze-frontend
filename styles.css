@@ -14,7 +14,7 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, var(--background-opacity)),
     url("https://static.vecteezy.com/system/resources/previews/025/446/274/large_2x/mental-health-happiness-creative-abstract-concept-colorful-illustration-of-male-head-paint-splatter-style-mindfulness-positive-thinking-self-care-idea-banner-white-background-generative-ai-photo.jpg") no-repeat center center;
   background-size: cover;
-  background-attachment: fixed; /* Remove this line */
+ /* Remove this line */
   color: var(--text-color);
   margin: 0;
   padding: 10px;
