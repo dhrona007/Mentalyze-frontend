@@ -19,29 +19,31 @@ async function sendMessage(message) {
   addMessage('You', message);
 
   try {
-    console.log("Sending message to backend:", message);  // Debug log
+    console.log("Sending message to backend:", message);
+
     const response = await fetch('https://mentalyze-backend.onrender.com/api/chat', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/json'
       },
-      body: JSON.stringify({ message }),
+      body: JSON.stringify({ message })
     });
 
-    if (!response.ok) throw new Error('Failed to fetch response');
-    
+    if (!response.ok) {
+      throw new Error(`Server error: ${response.status} - ${response.statusText}`);
+    }
+
     const data = await response.json();
-    console.log("Received response from backend:", data);  // Debug log
-    if (data.status === 'question') {
-      // Display the next question
+    console.log("Received response from backend:", data);
+    
+    if (data.status === 'analysis') {
       addMessage('Mentalyze', data.reply);
-    } else if (data.status === 'analysis') {
-      // Display the analysis
-      addMessage('Mentalyze', data.reply);
+    } else {
+      addMessage('Mentalyze', "I'm sorry, I didn't understand that.");
     }
   } catch (error) {
-    console.error('Error sending message:', error);
-    addMessage('Mentalyze', 'Sorry, something went wrong. Please try again.');
+    console.error('Error:', error);
+    addMessage('Mentalyze', '⚠️ Error communicating with the server. Please try again later.');
   }
 }
 
