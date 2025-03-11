@@ -10,7 +10,7 @@ const saveUsernameBtn = document.getElementById('save-username-btn');
 
 // Determine the backend URL based on the environment
 const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-const BACKEND_URL = isLocal ? 'http://127.0.0.1:5000' : 'https://mentalyze-backend.onrender.com';
+const BACKEND_URL = isLocal ? 'http://127.0.0.1:5000' : 'https://mentalyze.onrender.com';
 
 let username = localStorage.getItem('username') || 'guest';
 let isUserScrolling = false;  // Flag to track manual scrolling
