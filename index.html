@@ -37,7 +37,7 @@
             <section class="container">
                 <!-- Chat Window -->
                 <div class="chat-sectionindow p-5">
-                    <h3><label for="chat-input" class="text-dark text-left ">Chat below</label></h3>
+                    <h3><label for="chat-input" class="text-center ">Chat below</label></h3>
                     <!-- Mood Tracking Buttons -->
                     <!-- <div class="mood-buttons d-none">
                         <button id="happy-btn" class="btn btn-outline-primary">😊 Happy</button>
@@ -45,25 +45,27 @@
                         <button id="anxious-btn">😰 Anxious</button>
                     </div> -->
                     <div id="chat-messages" class="text-left pb-1 text-black "></div>
-                    <input type="text" type="text" id="chat-input" name="chat-input" class="mt-4" autocomplete="off"
-                        placeholder="Type your feelings..." autofocus>
-                    <div class="container-fluid mt-2 buttons-container">
-                        <div class="row">
-                            <div class="col-auto mb-2 mr-2">
-                                <button id="start-assessment-btn" class="btn btn-primary button">Start
-                                    Assessment</button>
-                            </div>
-                            <div class="col-auto mb-2 mr-2">
+                    <div class="bg-white InputTextButtonContainer">
+                        <input type="text" type="text" id="chat-input" name="chat-input" class="mt-4" autocomplete="off"
+                            placeholder="Type your feelings..." autofocus>
+                        <div class="container-fluid mt-2 buttons-container">
+                            <div class="row">
+                                <div class="col-auto mb-2 mr-2">
+                                    <button id="start-assessment-btn" class="btn btn-primary button">Start
+                                        Assessment</button>
+                                </div>
+                                <div class="col-auto mb-2 mr-2">
 
-                                <button id="send-btn" type="Submit" value="Submit"
-                                    class="button btn btn-success">Send</button>
-                            </div>
-                            <div class="col-auto mb-2 mr-2 ">
-                                <button id="resetBtn" type="reset" class="button btn btn-info">Reset Chat</button>
-                            </div>
-                            <div class="col-auto mb-2 mr-2">
-                                <!-- Emergency Alert Button -->
-                                <button id="emergency-btn" class="button btn btn-danger">Emergency Alert</button>
+                                    <button id="send-btn" type="Submit" value="Submit"
+                                        class="button btn btn-success">Send</button>
+                                </div>
+                                <div class="col-auto mb-2 mr-2 ">
+                                    <button id="resetBtn" type="reset" class="button btn btn-info">Reset Chat</button>
+                                </div>
+                                <div class="col-auto mb-2 mr-2">
+                                    <!-- Emergency Alert Button -->
+                                    <button id="emergency-btn" class="button btn btn-danger">Emergency Alert</button>
+                                </div>
                             </div>
                         </div>
                     </div>
