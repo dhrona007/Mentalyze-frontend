@@ -158,7 +158,6 @@ body::before {
 .chat-sectionindow {
   background-color: rgba(7, 5, 0, 0.718);
   border-radius: 10px;
-  padding-top: 15px;
 }
 
 .mainContent {
@@ -207,10 +206,11 @@ body::before {
 }
 
 .chat-sectionindow {
-  background-color: rgba(150, 150, 150, 0.562);
+  background-color: rgba(207, 207, 207, 0.562);
   border-radius: 10px;
   width: 100%;
   color: white;
+  padding-top: 15px;
   /* Minimum height to ensure it doesn't collapse */
   z-index: 1;
   /* Ensure it doesn't overlap other content */
