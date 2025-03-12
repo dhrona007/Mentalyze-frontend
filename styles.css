@@ -210,7 +210,8 @@ body::before {
   border-radius: 10px;
   width: 100%;
   color: white;
-  padding-top: 15px;
+  padding : 0px!important;
+  padding-top: 15px;  
   /* Minimum height to ensure it doesn't collapse */
   z-index: 1;
   /* Ensure it doesn't overlap other content */
