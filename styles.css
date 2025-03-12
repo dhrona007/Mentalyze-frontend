@@ -280,7 +280,7 @@ body::before {
 
 /* Chatbot messages - aligned to the left */
 .message.Mentalyze {
-  background-color: #000000;
+  background-color: #000000c6;
   align-self: flex-start;
   text-align: left;
   border-bottom-left-radius: 0;
