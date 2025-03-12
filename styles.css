@@ -206,10 +206,10 @@ body::before {
 }
 
 .chat-sectionindow {
-  background-color: rgba(255, 255, 255, 0.718);
+  background-color: rgba(150, 150, 150, 0.562);
   border-radius: 10px;
   width: 100%;
-
+  color: white;
   /* Minimum height to ensure it doesn't collapse */
   z-index: 1;
   /* Ensure it doesn't overlap other content */
@@ -223,7 +223,7 @@ body::before {
   margin-bottom: 5px;
   /* Add space below the chat messages */
   scrollbar-width: thin;
-  scrollbar-color: #888 transparent;
+  scrollbar-color: #000000 transparent;
   margin-left: 5px;
   padding: 10px;
   display: flex;
@@ -251,8 +251,12 @@ body::before {
   width: calc(100% - 90px);
   padding: 10px;
   width: 100%;
-  border: 1px solid #ccc;
+  border: 0px solid #ccc;
   border-radius: 5px;
+}
+
+.InputTextButtonContainer {
+  border-radius: 20px;
 }
 
 /* Common chat message styling */
@@ -267,7 +271,7 @@ body::before {
 
 /* User messages - aligned to the right */
 .message.You {
-  background-color: #dcf8c6;
+  background-color: #20356e;
   /* Light green (WhatsApp style) */
   align-self: flex-end;
   text-align: right;
@@ -276,11 +280,11 @@ body::before {
 
 /* Chatbot messages - aligned to the left */
 .message.Mentalyze {
-  background-color: #ffffff;
+  background-color: #000000;
   align-self: flex-start;
   text-align: left;
   border-bottom-left-radius: 0;
-  border: 1px solid #ddd;
+  border: 0px solid #ddd;
 }
 
 
@@ -322,7 +326,7 @@ section {
   max-width: 900px;
   border-radius: 10px;
   background: var(--white);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
   color: var(--text-color);
   margin: auto;
 }
